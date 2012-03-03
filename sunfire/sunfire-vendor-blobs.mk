@@ -25,7 +25,9 @@ PRODUCT_COPY_FILES +=  \
 	vendor/moto/sunfire/proprietary/lib/libril.so:system/lib/libril.so \
 	vendor/moto/sunfire/proprietary/lib/libril_rds.so:system/lib/libril_rds.so \
 	vendor/moto/sunfire/proprietary/lib/libtpa.so:system/lib/libtpa.so \
-	vendor/moto/sunfire/proprietary/lib/libtpa_core.so:system/lib/libtpa_core.so
+	vendor/moto/sunfire/proprietary/lib/libtpa_core.so:system/lib/libtpa_core.so \
+	vendor/moto/sunfire/proprietary/app/AudioEffectSettings.apk:system/app/AudioEffectSettings.apk \
+	vendor/moto/sunfire/proprietary/app/FastDormancy.apk:system/app/FastDormancy.apk \
 
 # System Utilities
 PRODUCT_COPY_FILES +=  \
