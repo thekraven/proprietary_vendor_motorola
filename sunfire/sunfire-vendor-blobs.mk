@@ -6,11 +6,33 @@ PRODUCT_COPY_FILES += \
 	vendor/moto/sunfire/proprietary/lib/libaudiopolicy.so:obj/lib/libaudiopolicy.so \
 	vendor/moto/sunfire/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
 	vendor/moto/sunfire/proprietary/lib/libhwmediarecorder.so:obj/lib/libhwmediarecorder.so \
-	vendor/moto/sunfire/proprietary/lib/libhwmediaplugin.so:obj/lib/libhwmediaplugin.so
 	#vendor/motorola/sunfire/proprietary/lib/libwimax_jni.so:obj/lib/libwimax_jni.so \
 
+# FINGERPRINT
 
-# System Libraries
+#PRODUCT_COPY_FILES += \
+#    vendor/moto/olympus/proprietary/lib/libAuthUDMDrv_1750A100.so:system/lib/libAuthUDMDrv_1750A100.so \
+#    vendor/moto/olympus/proprietary/lib/libam2app.so:system/lib/libam2app.so \
+#    vendor/moto/olympus/proprietary/lib/libam2server.so:system/lib/libam2server.so \
+#    vendor/moto/olympus/proprietary/bin/am2server:system/bin/am2server \
+#    vendor/moto/olympus/proprietary/app/GfxEngine.apk:system/app/GfxEngine.apk \
+#    vendor/moto/olympus/proprietary/etc/am2server.pubkey:system/etc/am2server.pubkey \
+
+# HAL
+PRODUCT_COPY_FILES +=  \
+	vendor/moto/sunfire/proprietary/lib/hw/gralloc.tegra.so:system/lib/hw/gralloc.tegra.so \
+	vendor/moto/sunfire/proprietary/lib/hw/overlay.tegra.so:system/lib/hw/overlay.tegra.so \
+	vendor/moto/sunfire/proprietary/lib/hw/sensors.sunfire.so:system/lib/hw/sensors.sunfire.so \
+	vendor/moto/sunfire/proprietary/lib/hw/gps.sunfire.so:system/lib/hw/gps.sunfire.so \
+	vendor/moto/sunfire/proprietary/lib/hw/lights.tegra.so:system/lib/hw/lights.tegra.so \
+
+# nVidia EGL libraries and config
+PRODUCT_COPY_FILES +=  \
+	vendor/moto/sunfire/proprietary/lib/egl/libEGL_tegra.so:system/lib/egl/libEGL_tegra.so \
+	vendor/moto/sunfire/proprietary/lib/egl/libGLESv1_CM_tegra.so:system/lib/egl/libGLESv1_CM_tegra.so \
+	vendor/moto/sunfire/proprietary/lib/egl/libGLESv2_tegra.so:system/lib/egl/libGLESv2_tegra.so
+	
+	# System Libraries
 PRODUCT_COPY_FILES +=  \
 	vendor/moto/sunfire/proprietary/lib/libaudio.so:system/lib/libaudio.so \
 	vendor/moto/sunfire/proprietary/lib/libaudiopolicy.so:system/lib/libaudiopolicy.so \
@@ -74,6 +96,7 @@ PRODUCT_COPY_FILES +=  \
 
 # OMX AV encoding and decoding
 PRODUCT_COPY_FILES +=  \
+	vendor/moto/sunfire/proprietary/lib/libhwmediaplugin.so:obj/lib/libhwmediaplugin.so \
 	vendor/moto/sunfire/proprietary/lib/libnvomx.so:system/lib/libnvomx.so \
 	vendor/moto/sunfire/proprietary/lib/libnvomxilclient.so:system/lib/libnvomxilclient.so \
 	vendor/moto/sunfire/proprietary/lib/libomx_aacdec_sharedlibrary.so:system/lib/libomx_aacdec_sharedlibrary.so \
@@ -122,15 +145,6 @@ PRODUCT_COPY_FILES +=  \
 	vendor/moto/sunfire/proprietary/lib/libhwmediarecorder.so:system/lib/libhwmediarecorder.so \
 	vendor/moto/sunfire/proprietary/lib/libhwmediaplugin.so:system/lib/libhwmediaplugin.so
 
-
-# Motorola Hardware Libraries
-PRODUCT_COPY_FILES +=  \
-	vendor/moto/sunfire/proprietary/lib/hw/gps.sunfire.so:system/lib/hw/gps.sunfire.so \
-	vendor/moto/sunfire/proprietary/lib/hw/gralloc.tegra.so:system/lib/hw/gralloc.tegra.so \
-	vendor/moto/sunfire/proprietary/lib/hw/overlay.tegra.so:system/lib/hw/overlay.tegra.so \
-	vendor/moto/sunfire/proprietary/lib/hw/lights.tegra.so:system/lib/hw/lights.tegra.so \
-	vendor/moto/sunfire/proprietary/lib/hw/sensors.sunfire.so:system/lib/hw/sensors.sunfire.so
-
 # Bluetooth utilities, libraries and configuration
 PRODUCT_COPY_FILES +=  \
 	vendor/moto/sunfire/proprietary/lib/liba2dp.so:system/lib/liba2dp.so \
@@ -168,11 +182,6 @@ PRODUCT_COPY_FILES +=  \
 	vendor/moto/sunfire/proprietary/bin/nvrm_daemon:system/bin/nvrm_daemon \
 	vendor/moto/sunfire/proprietary/bin/tegrastats:system/bin/tegrastats
 
-# nVidia EGL libraries and config
-PRODUCT_COPY_FILES +=  \
-	vendor/moto/sunfire/proprietary/lib/egl/libEGL_tegra.so:system/lib/egl/libEGL_tegra.so \
-	vendor/moto/sunfire/proprietary/lib/egl/libGLESv1_CM_tegra.so:system/lib/egl/libGLESv1_CM_tegra.so \
-	vendor/moto/sunfire/proprietary/lib/egl/libGLESv2_tegra.so:system/lib/egl/libGLESv2_tegra.so
 
 # Broadcom userland components
 PRODUCT_COPY_FILES +=  \
