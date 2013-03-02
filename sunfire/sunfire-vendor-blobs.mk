@@ -50,6 +50,12 @@ PRODUCT_COPY_FILES +=  \
 	vendor/moto/sunfire/proprietary/lib/libtpa_core.so:system/lib/libtpa_core.so \
 	vendor/moto/sunfire/proprietary/app/AudioEffectSettings.apk:system/app/AudioEffectSettings.apk \
 	vendor/moto/sunfire/proprietary/app/FastDormancy.apk:system/app/FastDormancy.apk \
+    vendor/moto/olympus/proprietary/lib/libnvrm_channel.so:system/lib/libnvrm_channel.so \ 
+    vendor/moto/olympus/proprietary/lib/hw/audio.a2dp.default.so:system/lib/hw/audio.a2dp.default.so \ 
+    vendor/moto/olympus/proprietary/lib/hw/audio.primary.default.so:system/lib/hw/audio.primary.default.so \ 
+    vendor/moto/olympus/proprietary/lib/hw/audio_policy.default.so:system/lib/hw/audio_policy.default.so \ 
+    vendor/moto/olympus/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so 
+
 
 # System Utilities
 PRODUCT_COPY_FILES +=  \
