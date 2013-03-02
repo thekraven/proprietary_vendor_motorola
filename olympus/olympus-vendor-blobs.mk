@@ -13,7 +13,10 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/lib/libam2server.so:system/lib/libam2server.so \
     vendor/moto/olympus/proprietary/bin/am2server:system/bin/am2server \
     vendor/moto/olympus/proprietary/app/GfxEngine.apk:system/app/GfxEngine.apk \
+    vendor/moto/olympus/proprietary/app/FingerprintSensor.apk:system/app/FingerprintSensor.apk \
     vendor/moto/olympus/proprietary/etc/am2server.pubkey:system/etc/am2server.pubkey \
+    vendor/moto/olympus/proprietary/etc/tsm.xml:system/etc/tsm.xml \
+    vendor/moto/olympus/proprietary/app/am2app.jar:system/framework/am2app.jar
 
 # HAL
 PRODUCT_COPY_FILES += \
@@ -69,9 +72,6 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/bin/tund:system/bin/tund \
     vendor/moto/olympus/proprietary/bin/bt_init:system/bin/bt_init \
     vendor/moto/olympus/proprietary/bin/bt_downloader:system/bin/bt_downloader \
-    vendor/moto/olympus/proprietary/bin/sdptool:system/bin/sdptool \
-    vendor/moto/olympus/proprietary/bin/Hostapd:system/bin/Hostapd \
-    vendor/moto/olympus/proprietary/bin/remountpds:system/bin/remountpds \
     vendor/moto/olympus/proprietary/bin/battd:system/bin/battd \
     vendor/moto/olympus/proprietary/bin/usbd:system/bin/usbd \
     vendor/moto/olympus/proprietary/bin/whisperd:system/bin/whisperd \
@@ -85,7 +85,9 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/bin/chat-ril:system/bin/chat-ril \
     vendor/moto/olympus/proprietary/bin/ftmipcd:system/bin/ftmipcd \
     vendor/moto/olympus/proprietary/bin/touchpad:system/bin/touchpad
-
+  #  vendor/moto/olympus/proprietary/bin/sdptool:system/bin/sdptool \
+ #   vendor/moto/olympus/proprietary/bin/Hostapd:system/bin/Hostapd \
+    #vendor/moto/olympus/proprietary/bin/remountpds:system/bin/remountpds \
 # Wifi/bt firmware
 PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/etc/wl/nvram.txt:system/etc/wl/nvram.txt \
@@ -101,6 +103,7 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/etc/touchpad/22/touchpad.cfg:system/etc/touchpad/22/touchpad.cfg \
     vendor/moto/olympus/proprietary/etc/bt_init.config:system/etc/bt_init.config \
     vendor/moto/olympus/proprietary/app/FastDormancy.apk:system/app/FastDormancy.apk \
+    vendor/moto/olympus/proprietary/app/AudioEffectSettings.apk:system/app/AudioEffectSettings.apk \
     vendor/moto/olympus/proprietary/etc/ppp/peers/pppd-ril.options:system/etc/ppp/peers/pppd-ril.options
 
 # system libs
@@ -148,10 +151,14 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/lib/libril_rds.so:system/lib/libril_rds.so \
     vendor/moto/olympus/proprietary/lib/libmoto_ril.so:system/lib/libmoto_ril.so \
     vendor/moto/olympus/proprietary/lib/librds_util.so:system/lib/librds_util.so \
-    vendor/moto/olympus/proprietary/lib/liba2dp.so:system/lib/liba2dp.so \
     vendor/moto/olympus/proprietary/lib/libnmea.so:system/lib/libnmea.so \
     vendor/moto/olympus/proprietary/lib/libbattd.so:system/lib/libbattd.so \
-    vendor/moto/olympus/proprietary/lib/libnvrm_channel.so:system/lib/libnvrm_channel.so
+    vendor/moto/olympus/proprietary/lib/libnvrm_channel.so:system/lib/libnvrm_channel.so \
+    vendor/moto/olympus/proprietary/lib/hw/audio.a2dp.default.so:system/lib/hw/audio.a2dp.default.so \
+    vendor/moto/olympus/proprietary/lib/hw/audio.primary.default.so:system/lib/hw/audio.primary.default.so \
+    vendor/moto/olympus/proprietary/lib/hw/audio_policy.default.so:system/lib/hw/audio_policy.default.so \
+    vendor/moto/olympus/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so
+#    vendor/moto/olympus/proprietary/lib/liba2dp.so:system/lib/liba2dp.so \
 
 # VIDEO
 PRODUCT_COPY_FILES += \
