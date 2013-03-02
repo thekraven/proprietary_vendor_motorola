@@ -254,8 +254,8 @@ PRODUCT_COPY_FILES +=  \
 
 
 # FM Radio
-#PRODUCT_COPY_FILES +=  \
-#	vendor/moto/sunfire/proprietary/bin/fmradioserver:system/bin/fmradioserver \
-#	vendor/moto/sunfire/proprietary/lib/libfmradio_jni.so:system/lib/libfmradio_jni.so \
-#	vendor/moto/sunfire/proprietary/lib/libfmradioplayer.so:system/lib/libfmradioplayer.so
+PRODUCT_COPY_FILES +=  \
+	vendor/moto/sunfire/proprietary/bin/fmradioserver:system/bin/fmradioserver \
+	vendor/moto/sunfire/proprietary/lib/libfmradio_jni.so:system/lib/libfmradio_jni.so \
+	vendor/moto/sunfire/proprietary/lib/libfmradioplayer.so:system/lib/libfmradioplayer.so
 
