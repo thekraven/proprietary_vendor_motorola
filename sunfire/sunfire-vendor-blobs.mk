@@ -54,7 +54,7 @@ PRODUCT_COPY_FILES +=  \
     vendor/moto/olympus/proprietary/lib/hw/audio.a2dp.default.so:system/lib/hw/audio.a2dp.default.so \
     vendor/moto/olympus/proprietary/lib/hw/audio.primary.default.so:system/lib/hw/audio.primary.default.so \
     vendor/moto/olympus/proprietary/lib/hw/audio_policy.default.so:system/lib/hw/audio_policy.default.so \
-    vendor/moto/olympus/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so 
+    vendor/moto/sunfire/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so 
 
 
 # System Utilities
